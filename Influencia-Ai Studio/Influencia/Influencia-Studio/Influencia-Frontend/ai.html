@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090914">
+  <meta name="description" content="Tell Influencia AI what you want to create or who you need to find.">
+  <title>AI Studio — Influencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ai.css">
+</head>
+<body>
+  <div class="ambient orb-a"></div><div class="ambient orb-b"></div><div class="ambient orb-c"></div><div class="auth-grid"></div>
+  <header class="ai-topbar">
+    <a class="ai-brand" href="index.html"><span>✳</span> influencia<span class="brand-dot">.</span></a>
+    <nav><a href="index.html">Home</a><a href="index.html#discover">Discover talent</a><a class="active" href="ai.html">AI Studio</a></nav>
+    <a class="top-login" href="login.html">Log in <span>↗</span></a>
+  </header>
+  <main class="ai-layout">
+    <section class="ai-intro">
+      <span class="eyebrow"><i></i> YOUR CREATIVE CO-PILOT</span>
+      <h1>Big ideas need<br><em>the right direction.</em></h1>
+      <p>Tell Influencia what you’re working on. Choose what matters to you, and let the AI help shape your next step.</p>
+      <div class="intro-points"><span><b>✦</b> Understand your goal</span><span><b>⌕</b> Find relevant talent</span><span><b>↗</b> Plan your next move</span></div>
+      <div class="orbit-art"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="orbit-center">✳<small>IDEAS<br>IN MOTION</small></div><span class="orbit-chip chip-one">✍ Words</span><span class="orbit-chip chip-two">♫ Sound</span><span class="orbit-chip chip-three">◈ Design</span><span class="orbit-chip chip-four">▶ Motion</span></div>
+    </section>
+
+    <section class="ai-panel-wrap">
+      <form class="ai-panel" id="aiForm">
+        <div class="panel-heading"><div><span class="panel-kicker">INFLUENCIA INTELLIGENCE</span><h2>What can I help you with?</h2></div><span class="ai-status"><i></i> READY</span></div>
+        <label class="field-label" for="userRole">First, tell me who you are</label>
+        <div class="role-options">
+          <label class="role-option selected"><input type="radio" name="userRole" value="creator" checked><span class="role-icon">✳</span><span><b>Creator</b><small>I want to grow my creative journey</small></span><span class="radio-dot"></span></label>
+          <label class="role-option"><input type="radio" name="userRole" value="recruiter"><span class="role-icon">⌕</span><span><b>Recruiter</b><small>I need creative people for a project</small></span><span class="radio-dot"></span></label>
+        </div>
+
+        <label class="field-label" for="aiPrompt">Describe what you have in mind</label>
+        <div class="prompt-wrap"><textarea id="aiPrompt" rows="5" placeholder="Example: I create Hindi storytelling videos and want to find a voice artist and thumbnail designer for my next series..."></textarea><div class="prompt-foot"><span>Be as detailed as you like</span><span id="charCount">0 / 1000</span></div></div>
+
+        <div class="criteria-heading"><div><label class="field-label">Choose your criteria</label><p id="criteriaHint">Select what matters for your creator journey.</p></div><span class="optional-tag">OPTIONAL</span></div>
+        <div class="criteria-grid" id="creatorCriteria">
+          <label class="criterion"><input type="checkbox" value="Find collaboration partners"><span class="fake-check">✓</span><span><b>Collaboration</b><small>Find creative partners</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Discover opportunities"><span class="fake-check">✓</span><span><b>Opportunities</b><small>Find relevant projects</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Improve my portfolio"><span class="fake-check">✓</span><span><b>Portfolio</b><small>Showcase my work</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Build my creator profile"><span class="fake-check">✓</span><span><b>Profile growth</b><small>Present my skills clearly</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Get creative direction"><span class="fake-check">✓</span><span><b>Creative guidance</b><small>Develop an idea</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Find an audience"><span class="fake-check">✓</span><span><b>Audience</b><small>Reach the right people</small></span></label>
+        </div>
+        <div class="criteria-grid hidden" id="recruiterCriteria">
+          <label class="criterion"><input type="checkbox" value="Find writers and storytellers"><span class="fake-check">✓</span><span><b>Writers</b><small>Scripts and storytelling</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Find voice artists and musicians"><span class="fake-check">✓</span><span><b>Voice & music</b><small>Narration and sound</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Find designers and illustrators"><span class="fake-check">✓</span><span><b>Designers</b><small>Visuals and branding</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Find video editors and animators"><span class="fake-check">✓</span><span><b>Video & motion</b><small>Editing and animation</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Match by language and genre"><span class="fake-check">✓</span><span><b>Language & genre</b><small>Match project context</small></span></label>
+          <label class="criterion"><input type="checkbox" value="Match by skills and portfolio"><span class="fake-check">✓</span><span><b>Skills & portfolio</b><small>Review relevant work</small></span></label>
+        </div>
+        <div class="extra-fields"><label><span>Preferred language <small>(optional)</small></span><select id="language"><option value="">No preference</option><option>Hindi</option><option>English</option><option>Bengali</option><option>Tamil</option><option>Telugu</option><option>Other / multiple</option></select></label><label><span>Project style <small>(optional)</small></span><select id="style"><option value="">Choose a style</option><option>Storytelling</option><option>Educational</option><option>Entertainment</option><option>Brand / promotional</option><option>Documentary</option><option>Experimental</option></select></label></div>
+        <button class="start-button" type="submit"><span>Start with Influencia AI</span><b>↗</b></button>
+        <p class="privacy-note">✦ Your choices help shape the request. You stay in control of the final decisions.</p>
+        <div class="result-box hidden" id="aiResult" role="status" aria-live="polite"><span class="result-icon">✳</span><div><b>Your request is ready</b><p id="resultText"></p><small>This is a frontend preview. Live AI analysis and matching will be connected during the backend stage.</small></div></div>
+      </form>
+      <a class="back-link" href="index.html">← Back to Influencia home</a>
+    </section>
+  </main>
+  <script src="js/ai.js"></script>
+</body>
+</html>

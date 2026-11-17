@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b18">
+  <meta name="description" content="Influencia connects creative talent with the people and projects that need them.">
+  <title>Influencia — Creative talent, in orbit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Influencia home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>influencia<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#discover">Discover talent</a>
+        <a href="#how">How it works</a>
+        <a href="#categories">Creative fields</a>
+        <a href="#for-brands">For teams</a>
+        <a href="ai.html">Ai Matchmaking</a>
+        <a href="#ai-studio">Profile Selection</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-login" href="login.html">Log in</a>
+        <a class="button button-small button-light" href="login.html?mode=signup">Join Influencia <span>↗</span></a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero-wrap">
+        <div class="hero">
+          <div class="hero-grain"></div>
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-spark">✳</span> THE CREATIVE COLLABORATION NETWORK</div>
+            <h1>Your next creative<br>collaboration is<br><em>closer than you think.</em></h1>
+            <p class="hero-description">A space where storytellers, voice artists, designers and creators meet the teams looking for their next great idea.</p>
+            <div class="hero-discovery glass-panel">
+              <label for="heroRole">What are you looking for?</label>
+              <div class="hero-search-row">
+                <div class="select-wrap"><select id="heroRole" aria-label="Choose creative category"><option value="all">Any creative field</option><option value="writer">Writers & storytellers</option><option value="voice">Voice & music artists</option><option value="design">Designers</option><option value="video">Video editors & animators</option></select><span>⌄</span></div>
+                <button class="hero-search-button" id="heroSearch" type="button" aria-label="Search creators">⌕</button>
+              </div>
+              <span class="search-hint">Discover people whose creativity fits your next idea.</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="login.html?mode=signup">Find your people <span>↗</span></a>
+              <a class="text-link" href="#how">See how it works <span>↓</span></a>
+            </div>
+            <div class="hero-proof">
+              <div class="mini-avatars">
+                <img src="assets/woman_avatar1.jpg" alt="">
+                <img src="assets/man_avatar1.jpg" alt="">
+                <img src="assets/woman_avatar2.avif" alt="">
+                <span>+</span>
+              </div>
+              <p><strong>One network.</strong> Many ways to create.</p>
+            </div>
+          </div>
+
+          <div class="orbit-stage" aria-label="Illustration of creative professionals connected in a network">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+            <div class="orbit-core">
+              <span class="core-star">✳</span>
+              <strong>Ideas<br>in motion.</strong>
+              <small>CREATIVITY CONNECTS</small>
+            </div>
+            <div class="orbit-person person-a"><img src="assets/woman_avatar1.jpg" alt="Creative professional"><b>✎</b></div>
+            <div class="orbit-person person-b"><img src="assets/man_avatar1.jpg" alt="Creative professional"><b>♫</b></div>
+            <div class="orbit-person person-c"><img src="assets/woman_avatar2.avif" alt="Creative professional"><b>◈</b></div>
+            <div class="orbit-person person-d"><img src="assets/man_avatar2.avif" alt="Creative professional"><b>▶</b></div>
+            <div class="orbit-person person-e"><img src="assets/woman_avatar3.jpg" alt="Creative professional"><b>✦</b></div>
+            <div class="floating-note note-one"><span class="note-icon">✍</span><span><b>Storyteller</b><small>Words that stay</small></span></div>
+            <div class="floating-note note-two"><span class="note-icon">◉</span><span><b>Voice artist</b><small>Bring it to life</small></span></div>
+            <div class="floating-pill">Good ideas find good people <span>✦</span></div>
+          </div>
+          <div class="hero-bottom">
+            <span>MADE FOR THE MAKERS</span>
+            <div class="hero-tags"><span>STORIES</span><span>·</span><span>SOUND</span><span>·</span><span>DESIGN</span><span>·</span><span>VIDEO</span><span>·</span><span>IMAGINATION</span></div>
+            <span class="hero-index">01 / 04</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip">
+        <p>Not another job board.</p>
+        <h2>A creative network built around <span>what you make.</span></h2>
+        <div class="strip-orb">✳</div>
+      </section>
+
+      <section class="section discover-section" id="discover">
+        <div class="section-heading">
+          <div><span class="section-kicker">THE PEOPLE BEHIND THE MAGIC</span><h2>Find your next<br><span>creative spark.</span></h2></div>
+          <p>Explore independent talent across the creative world. Discover a style, hear a voice, see a story — then start something together.</p>
+        </div>
+        <div class="filter-row" id="filterRow">
+          <button class="filter-chip active" data-filter="all">All creators <span>06</span></button>
+          <button class="filter-chip" data-filter="writer">Writers</button>
+          <button class="filter-chip" data-filter="voice">Voice artists</button>
+          <button class="filter-chip" data-filter="design">Designers</button>
+          <button class="filter-chip" data-filter="video">Video & motion</button>
+        </div>
+        <div class="creator-grid" id="creatorGrid">
+          <article class="creator-card" data-category="writer">
+            <div class="creator-visual visual-story"><span class="visual-label">STORYTELLING</span><span class="visual-symbol">“ “</span><img src="assets/writing_on.avif" alt="Notebook and writing desk"></div>
+            <div class="creator-info"><div class="creator-avatar"><img src="assets/writer_woman.avif" alt=""></div><div class="creator-meta"><h3>Meera Kapoor <span class="verified">✦</span></h3><p>Writer · Fiction & audio stories</p></div><span class="creator-arrow">↗</span></div>
+            <div class="skill-row"><span>Hindi</span><span>Thriller</span><span>Scripts</span></div>
+            <div class="creator-social-row"><span class="follower-count">◎ 12.8K followers</span><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img src="assets/linkedin-logo.jpeg" alt=""></a></div>
+          </article>
+          <article class="creator-card" data-category="voice">
+            <div class="creator-visual visual-voice"><span class="visual-label">VOICE & SOUND</span><div class="sound-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-caption">Every story has a voice.</span></div>
+            <div class="creator-info"><div class="creator-avatar"><img src="assets/man_avatar2.avif" alt=""></div><div class="creator-meta"><h3>Rohan Das <span class="verified">✦</span></h3><p>Voice artist · Narration</p></div><span class="creator-arrow">↗</span></div>
+            <div class="skill-row"><span>English</span><span>Hindi</span><span>Warm tone</span></div>
+            <div class="creator-social-row"><span class="follower-count">◎ 8.4K followers</span><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img src="assets/linkedin-logo.jpeg" alt=""></a></div>
+          </article>
+          <article class="creator-card" data-category="design">
+            <div class="creator-visual visual-design"><span class="visual-label">VISUAL DESIGN</span><div class="design-shapes"><b>MAKE<br>IT<br>MATTER.</b><span></span><i></i></div></div>
+            <div class="creator-info"><div class="creator-avatar"><img src="assets/profile_woman.avif" alt=""></div><div class="creator-meta"><h3>Ananya Roy <span class="verified">✦</span></h3><p>Designer · Thumbnails & identity</p></div><span class="creator-arrow">↗</span></div>
+            <div class="skill-row"><span>Photoshop</span><span>Branding</span><span>Editorial</span></div>
+            <div class="creator-social-row"><span class="follower-count">◎ 21.2K followers</span><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img src="assets/linkedin-logo.jpeg" alt=""></a></div>
+          </article>
+          <article class="creator-card" data-category="video">
+            <div class="creator-visual visual-video"><span class="visual-label">VIDEO & MOTION</span><img src="assets/video_editing.avif" alt="Camera setup"><span class="video-time">01:24 SHOWREEL</span></div>
+            <div class="creator-info"><div class="creator-avatar"><img src="assets/man_video_editor.jpg" alt=""></div><div class="creator-meta"><h3>Arjun Sen <span class="verified">✦</span></h3><p>Video editor · Short-form films</p></div><span class="creator-arrow">↗</span></div>
+            <div class="skill-row"><span>Premiere Pro</span><span>Reels</span><span>Motion</span></div>
+            <div class="creator-social-row"><span class="follower-count">◎ 16.5K followers</span><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img src="assets/linkedin-logo.jpeg" alt=""></a></div>
+          </article>
+          <article class="creator-card" data-category="writer">
+            <div class="creator-visual visual-poetry"><span class="visual-label">WORDS & WORLDS</span><div class="poetry-lines">Some stories<br>find a way<br>to <em>stay.</em></div><span class="poetry-mark">✳</span></div>
+            <div class="creator-info"><div class="creator-avatar"><img src="assets/man_avatar1.jpg" alt=""></div><div class="creator-meta"><h3>Anuj Roy</h3><p>Scriptwriter · Drama & romance</p></div><span class="creator-arrow">↗</span></div>
+            <div class="skill-row"><span>Bengali</span><span>Hindi</span><span>Dialogue</span></div>
+            <div class="creator-social-row"><span class="follower-count">◎ 6.9K followers</span><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img src="assets/linkedin-logo.jpeg" alt=""></a></div>
+          </article>
+          <article class="creator-card" data-category="voice">
+            <div class="creator-visual visual-music"><span class="visual-label">MUSIC & AUDIO</span><div class="music-note">♫</div><div class="music-rings"></div><span class="music-caption">Sound with a soul</span></div>
+            <div class="creator-info"><div class="creator-avatar"><img src="assets/man_profile.jpg" alt=""></div><div class="creator-meta"><h3>Kabir Mehta</h3><p>Composer · Original scores</p></div><span class="creator-arrow">↗</span></div>
+            <div class="skill-row"><span>Sound design</span><span>Ambient</span><span>Audio</span></div>
+            <div class="creator-social-row"><span class="follower-count">◎ 10.1K followers</span><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram profile"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><img src="assets/linkedin-logo.jpeg" alt=""></a></div>
+          </article>
+        </div>
+        <div class="center-action"><a href="login.html?mode=signup" class="button button-outline">Explore the creative network <span>↗</span></a></div>
+      </section>
+
+
+      <section class="ai-showcase section" id="ai-studio">
+        <div class="ai-heading"><div><span class="section-kicker">INTRODUCING INFLUENCIA INTELLIGENCE</span><h2>Less searching.<br><span>More creating.</span></h2></div><p>Our AI is designed to understand creative briefs and creative work, helping people discover collaborators who fit the idea — while humans stay in control.</p></div>
+        <div class="ai-feature-grid">
+          <article class="ai-feature-card ai-match-card"><div class="ai-card-top"><span class="ai-icon">✦</span><span class="ai-status">AI WORKFLOW PREVIEW</span></div><h3>Smart talent matching</h3><p>Turn a project brief into relevant creator recommendations with clear reasons behind each suggestion.</p><div class="match-preview"><div class="match-line"><span class="match-avatar avatar-one">M</span><span><b>Meera Kapoor</b><small>Hindi storyteller · Thriller</small></span><strong>Strong fit</strong></div><div class="match-line"><span class="match-avatar avatar-two">R</span><span><b>Rohan Das</b><small>Voice artist · Hindi narration</small></span><strong>Relevant</strong></div></div><small class="demo-note">Illustrative interface — sample profiles, not live AI results.</small></article>
+          <article class="ai-feature-card ai-brief-card"><div class="ai-card-top"><span class="ai-icon">⌘</span><span class="ai-status">BRIEF UNDERSTANDING</span></div><h3>Requirement analyzer</h3><p>Describe your project naturally. AI can organize the brief into roles, skills, languages and creative needs.</p><div class="brief-demo"><span class="brief-prompt">“Looking for a Bengali voice artist for a mystery podcast...”</span><div class="brief-tags"><span>Voice artist</span><span>Bengali</span><span>Mystery</span><span>Podcast</span></div></div><small class="demo-note">Example of the planned AI output.</small></article>
+          <article class="ai-feature-card ai-portfolio-card"><div class="ai-card-top"><span class="ai-icon">◈</span><span class="ai-status">PORTFOLIO INSIGHTS</span></div><h3>Portfolio understanding</h3><p>Help creators describe their work and make samples easier to discover by relevant skills and themes.</p><div class="portfolio-demo"><div class="portfolio-art">Aa<span>STORY<br>WORLDS</span></div><div class="portfolio-insight"><b>Detected themes</b><span>Storytelling</span><span>Dialogue writing</span><span>Audio fiction</span></div></div><small class="demo-note">Concept preview — analysis will be connected to AI later.</small></article>
+        </div>
+      </section>
+
+      <section class="section categories-section" id="categories">
+        <div class="section-heading compact"><div><span class="section-kicker">A PLACE FOR EVERY KIND OF CREATOR</span><h2>Different crafts.<br><span>One shared space.</span></h2></div><p>Whether you work with words, sound, pixels or motion, there is room for your craft here.</p></div>
+        <div class="category-grid">
+          <a href="login.html?mode=signup" class="category-tile cat-lilac"><img class="category-photo" src="assets/craft-writing.jpeg" alt="A writer working in a notebook"><span class="category-shade"></span><span class="cat-number">01 / WORDS</span>><h3>Writers &<br>storytellers</h3><span class="cat-link">Find your audience ↗</span></a>
+          <a href="login.html?mode=signup" class="category-tile cat-orange"><img class="category-photo" src="assets/craft-voice.jpeg" alt="A voice artist recording in a studio"><span class="category-shade"></span><span class="cat-number">02 / SOUND</span><span class="cat-icon">♫</span><h3>Voice &<br>music artists</h3><span class="cat-link">Let them hear you ↗</span></a>
+          <a href="login.html?mode=signup" class="category-tile cat-blue"><img class="category-photo" src="assets/craft-design.jpeg" alt="A designer creating artwork on a tablet"><span class="category-shade"></span><span class="cat-number">03 / VISUALS</span><span class="cat-icon">◈</span><h3>Designers &<br>illustrators</h3><span class="cat-link">Show your style ↗</span></a>
+          <a href="login.html?mode=signup" class="category-tile cat-green"><img class="category-photo" src="assets/craft-video.jpeg" alt="A video editor working at a computer"><span class="category-shade"></span><span class="cat-number">04 / MOTION</span><span class="cat-icon">▶</span><h3>Editors &<br>animators</h3><span class="cat-link">Make it move ↗</span></a>
+        </div>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="section how-inner">
+          <div class="how-heading"><span class="section-kicker">SIMPLE BY DESIGN</span><h2>From “I need someone”<br>to <span>“let's create.”</span></h2><p>Influencia makes it easier to find the right creative partner and turn a good brief into a great collaboration.</p><a class="button button-primary" href="login.html?mode=signup">Get started <span>↗</span></a></div>
+          <div class="steps">
+            <div class="step"><span class="step-no">01</span><div class="step-icon">✳</div><div><h3>Show what you do</h3><p>Creators build a profile that brings their work, skills and style together.</p></div><span class="step-arrow">↗</span></div>
+            <div class="step"><span class="step-no">02</span><div class="step-icon">⌕</div><div><h3>Discover the right fit</h3><p>Teams explore portfolios and share the kind of talent their project needs.</p></div><span class="step-arrow">↗</span></div>
+            <div class="step"><span class="step-no">03</span><div class="step-icon">✦</div><div><h3>Make something together</h3><p>Connect, discuss the brief and bring the collaboration to life.</p></div><span class="step-arrow">↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-cta section" id="for-brands">
+        <div class="cta-glow"></div>
+        <span class="section-kicker">FOR CHANNELS, STUDIOS & CREATIVE TEAMS</span>
+        <h2>Your next project deserves<br><em>the right creative minds.</em></h2>
+        <p>Tell us what you're making. Discover writers, voice artists, designers and more who can help make it happen.</p>
+        <a href="login.html?mode=signup&role=recruiter" class="button button-light">Find creative talent <span>↗</span></a>
+        <div class="cta-orbit">✳</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-glow"></div>
+      <div class="footer-main">
+        <div class="footer-brand-block"><a class="brand" href="#home"><span class="brand-mark"><span></span><span></span><span></span></span><span>influencia<span class="brand-dot">.</span></span></a><p>Where creative talent meets the next big idea.</p><a class="footer-join" href="login.html?mode=signup">Create your profile <span>↗</span></a></div>
+        <div class="footer-column"><b>Explore</b><a href="#discover">Discover talent</a><a href="#categories">Creative fields</a><a href="#ai-studio">AI studio</a></div>
+        <div class="footer-column"><b>Get started</b><a href="login.html?mode=signup">Join as a creator</a><a href="login.html?mode=signup&role=recruiter">Hire creative talent</a><a href="#how">How it works</a></div>
+        <div class="footer-social-block"><b>Follow the creative wave</b><div class="footer-socials"><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/instagram-logo.png" alt=""></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/linkedin-logo.jpeg" alt=""></a></div><small>Connect. Collaborate. Create.</small></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Influencia. Made for creative minds.</span><span>Built for people who make things matter.</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

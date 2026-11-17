@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#090914">
+<title>Join Influencia — Sign in or create account</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<div class="ambient orb-a"></div><div class="ambient orb-b"></div><div class="ambient orb-c"></div><div class="auth-grid"></div>
+<a class="auth-brand" href="index.html"><span class="brand-symbol">✳</span> influencia<span>.</span></a>
+<main class="auth-layout">
+  <aside class="auth-side">
+    <span class="side-kicker">YOUR NEXT CHAPTER STARTS HERE</span>
+    <h1>Find your<br>people. Make<br><em>your mark.</em></h1>
+    <p>Bring your creative work into the light, discover new opportunities and meet the people who can help your ideas travel further.</p>
+    <div class="side-art"><div class="side-ring ring-a"></div><div class="side-ring ring-b"></div><div class="side-center">✳<small>CREATE<br>TOGETHER</small></div><span class="side-bubble bubble-a">✍</span><span class="side-bubble bubble-b">♫</span><span class="side-bubble bubble-c">◈</span><span class="side-bubble bubble-d">▶</span></div>
+    <div class="side-foot"><span>STORIES · SOUND · DESIGN · MOTION</span><span>01 — INFLUENCIA</span></div>
+  </aside>
+  <section class="auth-main">
+    <div class="auth-card-wrap"><div class="auth-card">
+      <div class="card-top"><div class="mini-brand"><span>✳</span> INFLUENCIA</div><span class="secure-note">✦ YOUR CREATIVE SPACE</span></div>
+      <header class="auth-heading"><h2 id="formTitle">Welcome back</h2><p id="formSubtitle">Sign in and pick up where your creativity left off.</p></header>
+      <div class="tab-track"><span class="tab-highlight" id="tabHighlight"></span><button class="tab active" id="loginTab" type="button">Log in</button><button class="tab" id="signupTab" type="button">Create account</button></div>
+      <div class="form-window"><div class="form-slider" id="formSlider">
+        <form class="auth-form" id="loginForm" novalidate>
+          <label class="field"><span>Email address</span><input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email"><small class="field-error" id="loginEmailError"></small></label>
+          <label class="field"><span>Password</span><div class="password-wrap"><input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password"><button type="button" class="eye" data-target="loginPassword" aria-label="Show password">◉</button></div><small class="field-error" id="loginPasswordError"></small></label>
+          <div class="form-options"><label class="check"><input type="checkbox"> <span>Keep me signed in</span></label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <button class="auth-submit" type="submit"><span>Log in to Influencia</span><b>↗</b></button>
+          <p class="form-note">New to the network? <a href="#" data-switch="signup">Create an account</a></p>
+        </form>
+        <form class="auth-form" id="signupForm" novalidate>
+          <label class="field"><span>Your name</span><input id="signupName" type="text" placeholder="How should we call you?" autocomplete="name"><small class="field-error" id="signupNameError"></small></label>
+          <label class="field"><span>Email address</span><input id="signupEmail" type="email" placeholder="you@example.com" autocomplete="email"><small class="field-error" id="signupEmailError"></small></label>
+          <label class="field"><span>Create password</span><div class="password-wrap"><input id="signupPassword" type="password" placeholder="At least 8 characters" autocomplete="new-password"><button type="button" class="eye" data-target="signupPassword" aria-label="Show password">◉</button></div><div class="strength"><span id="strengthBar"></span></div><small id="strengthText">Use 8+ characters for a stronger password</small><small class="field-error" id="signupPasswordError"></small></label>
+          <div class="role-label">I’m joining as a…</div><div class="role-picker"><label><input type="radio" name="role" value="creator" checked><span class="role-icon">✳</span><b>Creator</b><small>Showcase my work</small></label><label><input type="radio" name="role" value="recruiter"><span class="role-icon">⌕</span><b>Recruiter</b><small>Find creative talent</small></label></div>
+          <label class="check terms-check"><input type="checkbox" id="terms"><span>I agree to the terms and privacy policy.</span></label>
+          <button class="auth-submit" type="submit"><span>Create my account</span><b>↗</b></button>
+          <p class="form-note">Already part of Influencia? <a href="#" data-switch="login">Log in</a></p>
+        </form>
+      </div></div>
+      <div class="auth-toast" id="authToast" role="status"></div>
+      <div class="auth-bottom"><span>INFLUENCIA © 2026</span><a href="index.html">← Back to home</a><a href="ai.html">Open AI Studio ↗</a><span>MADE FOR CREATIVE MINDS</span></div>
+    </div></div>
+  </section>
+</main>
+<script src="js/auth.js"></script>
+</body></html>
