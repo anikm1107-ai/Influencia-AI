@@ -51,7 +51,7 @@ flowchart TD
 | Supabase Storage | Store creator portfolio files |
 | Matching logic | Compare a recruiter's requirements with creator profile data and explain relevance |
 
-The browser must call our backend for AI requests. **Never put a Gemini secret API key in frontend HTML or JavaScript.**
+The browser must call our backend for AI requests. 
 
 ## Current frontend
 
@@ -75,6 +75,5 @@ The first working MVP should demonstrate one complete flow:
 5. The backend validates the AI response and returns it to the frontend.
 6. For a recruiter request, the backend compares the extracted requirements with a small set of sample creator profiles and returns ranked suggestions with clear reasons.
 
-F
 
 
